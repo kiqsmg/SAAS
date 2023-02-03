@@ -54,7 +54,7 @@ public class ATM { //criaremos a public class ATM (acessivel a utras clases) lem
     System.out.print("Digite o quanto você quer retirar, desde que sejá multiplo de (10, 20, 50, 100):");
     int amount = scanner.nextInt();
     if (amount % 10 != 0 || amount > saldo) {
-      System.out.println("Saldo insuficiente, seu saldo atual é de: $" + saldo + ". Tente novamente.");
+      System.out.println("Valor invalido, seu saldo atual é de: $" + saldo + ". Tente novamente.");
     } else {
       saldo -= amount;
       System.out.println("Você acabou de retirar $" + amount);
